@@ -12,11 +12,11 @@ import json
 # 此处为关闭浏览器，并将behave 的json报告转化为 cucumber兼容的json报告，便于Jenkins集成展示
 def after_all(context):
     # context.dr.close()
-    file = r'/src/features/reports/jsonDumps/testResult.json'
+    file = r'/Users/Shared/Jenkins/Home/workspace/my_pipeline_master-AMXCX5PJQ4L6Y72B7XKK2QU2UKY75TLVPYWQIET7GX4TQIWCGF6A/features/reports/jsonDumps/testResult.json'
     with open(file) as behave_json:
         cucumberJson = behave2cucumber.convert(json.load(behave_json))
         jsonStr = json.dumps(cucumberJson)
 
-    jsonReport = open(r'/src/features/reports/jsonReports/jsonReport.json','w')
+    jsonReport = open(r'/Users/Shared/Jenkins/Home/workspace/my_pipeline_master-AMXCX5PJQ4L6Y72B7XKK2QU2UKY75TLVPYWQIET7GX4TQIWCGF6A/features/reports/jsonReports/jsonReport.json','w')
     jsonReport.write(jsonStr)
     jsonReport.close()
