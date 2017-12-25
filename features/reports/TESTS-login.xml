@@ -1,0 +1,141 @@
+<testsuite errors="0" failures="0" name="login.测试噼里啪智能财税系统" skipped="0" tests="7" time="6.051532"><testcase classname="login.测试噼里啪智能财税系统" name="测试噼里啪智能财税系统用户登陆接口 -- @1.1 " status="passed" time="5.372174"><system-out>
+<![CDATA[
+@scenario.begin
+  场景大纲: 测试噼里啪智能财税系统用户登陆接口 -- @1.1 
+    假如 :测试者输入用户名likexin,密码111111,用例名称是:登录正确的用户名密码 ... passed in 0.000s
+    当 :输入参数完毕后并成功发送请求 ... passed in 5.372s
+    那么 :接口返回的状态是True,错误代码' ',错误信息' ' ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+用例 1 登录正确的用户名密码
+
+<class 'dict'>
+接口响应 {'status': True, 'errorcode': '', 'message': '', 'data': {'UserName': 'likexin', 'EmployeeName': '李可欣', 'UserId': 212, 'AccountId': 36, 'AccountCategory': 4, 'CompanyId': 856, 'Functions': '票据审核,备处理库,新增凭证,查看凭证,期末结转,科目余额表,总账,明细账,资产负债表,利润表,现金流量表,风险提示,老板报表,结账,增值税表,附加税报表,增值税表(小规模),企业所得税(A类),企业所得税(B类),企业所得税汇总,印花税表,企业所得税,客户信息,账号管理,系统参数,客户管理,票据录入', 'ResourceCode': '010301,010501,020101,020201,020202,020203,020401,030101,030102,030201,030202,030301,030302,040101,040102,040201,040202,040301,040302,040401,040501,050101,060101,060102,060201,060202,060301,060302,060401,060402,060501,060601,060801,060901,061001,070101,070102,070103,070104,070105,070106,070201,070202,070203,070402,070701,010201', 'Identity': [3, 4, 6], 'DefaultPage': None, 'IsCenter': 1, 'IsManager': 1, 'IsParttime': 0}} 
+
+True
+
+]]>
+</system-out></testcase><testcase classname="login.测试噼里啪智能财税系统" name="测试噼里啪智能财税系统用户登陆接口 -- @1.2 " status="passed" time="0.090146"><system-out>
+<![CDATA[
+@scenario.begin
+  场景大纲: 测试噼里啪智能财税系统用户登陆接口 -- @1.2 
+    假如 :测试者输入用户名likexin,密码222222,用例名称是:登录用户名或密码错误（密码错误） ... passed in 0.000s
+    当 :输入参数完毕后并成功发送请求 ... passed in 0.090s
+    那么 :接口返回的状态是False,错误代码' ',错误信息' ' ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+用例 2 登录用户名或密码错误（密码错误）
+
+<class 'dict'>
+接口响应 {'status': False, 'errorcode': '05', 'message': '登录密码不正确', 'data': None} 
+
+False
+
+]]>
+</system-out></testcase><testcase classname="login.测试噼里啪智能财税系统" name="测试噼里啪智能财税系统用户登陆接口 -- @1.3 " status="passed" time="0.134319"><system-out>
+<![CDATA[
+@scenario.begin
+  场景大纲: 测试噼里啪智能财税系统用户登陆接口 -- @1.3 
+    假如 :测试者输入用户名test,密码111111,用例名称是:登录用户名或密码错误（用户名错误） ... passed in 0.000s
+    当 :输入参数完毕后并成功发送请求 ... passed in 0.134s
+    那么 :接口返回的状态是False,错误代码'',错误信息'' ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+用例 3 登录用户名或密码错误（用户名错误）
+
+<class 'dict'>
+接口响应 {'status': False, 'errorcode': '05', 'message': '登录密码不正确', 'data': None} 
+
+False
+
+]]>
+</system-out></testcase><testcase classname="login.测试噼里啪智能财税系统" name="测试噼里啪智能财税系统用户登陆接口 -- @1.4 " status="passed" time="0.086893"><system-out>
+<![CDATA[
+@scenario.begin
+  场景大纲: 测试噼里啪智能财税系统用户登陆接口 -- @1.4 
+    假如 :测试者输入用户名test,密码123456,用例名称是:登录用户名或密码为空（用户名、密码错误） ... passed in 0.000s
+    当 :输入参数完毕后并成功发送请求 ... passed in 0.086s
+    那么 :接口返回的状态是False,错误代码'',错误信息'' ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+用例 4 登录用户名或密码为空（用户名、密码错误）
+
+<class 'dict'>
+接口响应 {'status': False, 'errorcode': '05', 'message': '登录密码不正确', 'data': None} 
+
+False
+
+]]>
+</system-out></testcase><testcase classname="login.测试噼里啪智能财税系统" name="测试噼里啪智能财税系统用户登陆接口 -- @1.5 " status="passed" time="0.217879"><system-out>
+<![CDATA[
+@scenario.begin
+  场景大纲: 测试噼里啪智能财税系统用户登陆接口 -- @1.5 
+    假如 :测试者输入用户名null,密码111111,用例名称是:登录用户名或密码为空（用户名为空） ... passed in 0.000s
+    当 :输入参数完毕后并成功发送请求 ... passed in 0.217s
+    那么 :接口返回的状态是False,错误代码'',错误信息'' ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+用例 5 登录用户名或密码为空（用户名为空）
+
+<class 'dict'>
+接口响应 {'status': False, 'errorcode': '', 'message': 'not found user:null', 'data': None} 
+
+False
+
+]]>
+</system-out></testcase><testcase classname="login.测试噼里啪智能财税系统" name="测试噼里啪智能财税系统用户登陆接口 -- @1.6 " status="passed" time="0.07496"><system-out>
+<![CDATA[
+@scenario.begin
+  场景大纲: 测试噼里啪智能财税系统用户登陆接口 -- @1.6 
+    假如 :测试者输入用户名likexin,密码null,用例名称是:登录用户名或密码为空（密码为空） ... passed in 0.000s
+    当 :输入参数完毕后并成功发送请求 ... passed in 0.075s
+    那么 :接口返回的状态是False,错误代码'',错误信息'' ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+用例 6 登录用户名或密码为空（密码为空）
+
+<class 'dict'>
+接口响应 {'status': False, 'errorcode': '05', 'message': '登录密码不正确', 'data': None} 
+
+False
+
+]]>
+</system-out></testcase><testcase classname="login.测试噼里啪智能财税系统" name="测试噼里啪智能财税系统用户登陆接口 -- @1.7 " status="passed" time="0.07516"><system-out>
+<![CDATA[
+@scenario.begin
+  场景大纲: 测试噼里啪智能财税系统用户登陆接口 -- @1.7 
+    假如 :测试者输入用户名null,密码null,用例名称是:登录用户名或密码为空（用户名、密码为空） ... passed in 0.000s
+    当 :输入参数完毕后并成功发送请求 ... passed in 0.075s
+    那么 :接口返回的状态是False,错误代码'',错误信息'' ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+用例 7 登录用户名或密码为空（用户名、密码为空）
+
+<class 'dict'>
+接口响应 {'status': False, 'errorcode': '', 'message': 'not found user:null', 'data': None} 
+
+False
+
+]]>
+</system-out></testcase></testsuite>
