@@ -8,7 +8,7 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls -lah
                     pwd
-                    behave features/login.feature
+                    behave --junit features/login.feature
                 '''
             }
         }
