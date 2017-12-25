@@ -10,3 +10,5 @@ COPY . .
 
 RUN behave  --junit features/login.feature
 
+RUN ll
+
